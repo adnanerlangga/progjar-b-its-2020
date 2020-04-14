@@ -40,7 +40,7 @@ class HttpServer:
 			method=j[0].upper().strip()
 			if (method=='GET'):
 				object_address = j[1].strip()
-				print(object_address)
+				# print(object_address)
 				return self.http_get(object_address)
 			else:
 				return self.response(400,'Bad Request','',{})
